@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock, Paper & Scissors</title>
+  <link rel="stylesheet" href="./public/css/output.css">
+</head>
+<body class="max-w-sm mx-auto font-sans py-10 px-5">
+  <h1 class="mb-14 font-title text-center text-6xl text-yellow sm:text-7xl">Rock, <span class="text-orange">paper </span><span class="text-green">& scissors</span></h1>
+
+  <!-- Initial Form -->
+  <div class="block" id="form-container">
+    <form class="flex flex-col items-center gap-4 text-lg" id="form">
+      <div class="w-full flex flex-col">
+        <label for="player1">Player 1:</label>
+        <input class="mt-1 py-0.5 px-3 border rounded-md focus:outline-orange" type="text" id="form__player1-name" name="player1" placeholder="Name">
+      </div>
+      <div class="w-full flex flex-col">
+        <label for="player2">Player 2</label>
+        <input class="mt-1 py-0.5 px-3 border rounded-md focus:outline-orange" type="text" id="form__player2-name" name="player2" placeholder="Name">
+      </div>
+      <button class="w-full mt-5 py-0.5 text-lg text-white bg-orange rounded-md disabled:opacity-50 disabled:cursor-not-allowed sm:w-40" type="submit" id="form__button" disabled>Start!</button>
+    </form>
+  </div>
+
+  <!-- Game -->
+  <div class="max-w-sm mx-auto hidden" id="game-container">
+    <div></div>
+  </div>
+  
+  <script src="./app.js"></script>
+</body>
+</html>
